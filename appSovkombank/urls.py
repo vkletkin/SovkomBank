@@ -18,9 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
 
-    path("task/", include("market.urls")),
-    path("show_orders/", include("market.urls")),
-    path("show_products/", include("market.urls")),
+    path("market/", include("market.urls")),
 
     path("auth/", include("users.urls")),
     path("auth/", include("django.contrib.auth.urls")),
